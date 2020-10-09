@@ -1,0 +1,45 @@
+Steps:
+1. search "Visual studio" in google chorme and click download from the visualstudio.microsoft.com (community)
+2. click that downloaded file and download it.
+3. many tools will be shown. Tick mark the python development tool, that will install Python 3.7.8. click install. It will take some time. also tick Desktop development with c++.
+4. To verify that installation is done. check in the main menu, search for IDLE, you will see IDLE(Python 3.7 64 bit).
+5. Right click on that and open file location.
+6.Again right click and open file location, here you can see, it is inside microsoft visual studio.  
+7. Set environmentalk variable for this. Right click "This PC", go to properties, go to advanced system settings. click environment variable --> path , click new and paste that folder location. and to install libraries for python, go to script folder also and add this path to enviroment variable.
+8. Click move up button to position this in the correct places. first python path then script path. click all ok of all the pop up windows.
+9. To check that , go to cmd and type python, it will show the current version i.e. 3,7 .
+
+Before installing openCV, we need to install  cmake, that is helpful to build the libraries and installation files.
+
+1. In chrome, type cmake then download.
+here lot of versions are available. go to CMake 3.4 or lower first (cmake-3.18.4-win64-x64.msi). its better way to install it rather than go to zip file and extract and install. 
+
+2. open from the main menu search, cmake-gui. set the envirnomental path also for cmake
+3. open cmd and run as administrator
+pip install opencv-python (this will install openCV and numpy also)
+check it by typing python : it will show the version
+then import cv2 and import numpy. 
+
+We need some libraries to install for computer vision
+1. scikit-image
+2. PIL: for heavy images like satelite images (opening, manipulating)
+3. OpenCV
+4. Mahotas: for parsing implemented in c++
+5. SciPy: Scientific python (linear algebra, integration etc)
+6. NumPy: Numerical python 
+7. Matplotlib
+
+Again open cmd and run as administrator
+1. pip install wheel
+% libraries are compressed as whl file: wheel file
+2. pip install matplotlib (many library it installs)
+3. pip install imutils. 
+4. pip install scipy
+
+Check all these by importing all
+python
+import cv2
+import numpy
+import matplotlib
+import scipy
+
